@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      The Cars
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,55 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Our Car Inventory: Test-Drive One Today</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <!--<app-explore-container name="Tab 2 page"></app-explore-container>-->
+
+  <style>
+    #header {
+      text-align:  center;
+      color: black;
+      font-size: 36px;
+    }
+
+    .column {f
+      loat: left;
+      width: 33.33%;
+      padding:  5px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
+  <h1 id="header">1969 Mustang</h1> <!--Car Name Header 1-->
+
+  <div class="row">
+    <div class="column">
+      <img id="mustang" src="././assets/1969-ford-mustang.jpg" alt="1969 Mustang" style="width:30%">
+    </div>
+    <div class="column">
+      <h2>Car Specifications</h2>
+    </div>
+  </div>
+
+  <h1 id="header">Porsche 911</h1> <!--Car Name Header 1-->
+
+  <div class="row">
+    <div class="column">
+      <img id="" src="././assets/Porsche911.jpg" alt="Porsche 911">
+    </div>
+  </div>
+
+  <!--<a href="https://classics.autotrader.com/classic-cars/1969/ford/mustang/101723988"><p>View Classic Mustang Car</p></a>-->
+
 </ion-content>
