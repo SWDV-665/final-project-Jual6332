@@ -22,7 +22,8 @@
       font-size: 36px;
     }
 
-    .column {f
+    .column {
+      text-align: center;
       loat: left;
       width: 33.33%;
       padding:  5px;
@@ -32,6 +33,9 @@
       box-sizing: border-box;
     }
 
+    .img {
+      text-align:  center;
+    }
     
     .row::after {
       content: "";
@@ -47,6 +51,9 @@
     </div>
     <div class="column">
       <h2>Car Specifications</h2>
+      <ion-button size="medium" (click)="presentAlertManufacturer()">Who manufactures the 1969 Mustang?</ion-button>
+      <ion-button size="medium" (click)="presentAlertEngineSize()" color="success">What is the engine size?</ion-button>
+      <ion-button size="medium" (click)="presentAlertAvgCost()" color="danger">What is the average cost for the 1969 model?</ion-button>
     </div>
   </div>
 
