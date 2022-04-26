@@ -36,6 +36,13 @@
     .img {
       text-align:  center;
     }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
     
     .row::after {
       content: "";
@@ -43,13 +50,11 @@
       display: table;
     }
   </style>
-  <h1 id="header">1969 Mustang</h1> <!--Car Name Header 1-->
 
+  <h1 id="header">1969 Mustang</h1> <!--Car Name Header 1-->
   <div class="row">
     <div class="column">
-      <img id="mustang" src="././assets/1969-ford-mustang.jpg" alt="1969 Mustang">
-    </div>
-    <div class="column">
+      <img class="center" src="././assets/1969-ford-mustang.jpg" alt="1969 Mustang">
       <h2>Car Specifications</h2>
       <ion-button size="medium" (click)="presentAlertManufacturer()">Who manufactures the 1969 Mustang?</ion-button>
       <ion-button size="medium" (click)="presentAlertEngineSize()" color="success">What is the engine size?</ion-button>
@@ -57,11 +62,10 @@
     </div>
   </div>
 
-  <h1 id="header">Porsche 911</h1> <!--Car Name Header 1-->
-
+  <h1 id="header">Porsche 911</h1> <!--Car Name Header 2-->
   <div class="row">
     <div class="column">
-      <img id="" src="././assets/Porsche911.jpg" alt="Porsche 911">
+      <img class="center" src="././assets/Porsche911.jpg" alt="Porsche 911">
     </div>
   </div>
 
